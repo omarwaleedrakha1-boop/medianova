@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d18">
+<meta name="description" content="MediaNova — واجهة أنيقة لتنزيل الوسائط المتاحة للتنزيل المصرّح به.">
+<title>MediaNova — حمّل الميديا بسهولة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080c16;--panel:#101827;--panel2:#141f31;--text:#f4f7ff;--muted:#94a3b8;--line:#26344b;--blue:#6c8cff;--cyan:#53d6e8;--shadow:0 24px 80px #0007}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#1c3564 0,transparent 48%),var(--bg);color:var(--text);font-family:Tajawal,system-ui,sans-serif;min-height:100vh}
+button,input{font:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:22px;letter-spacing:.2px}.logo{width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#07101e;font-size:21px;box-shadow:0 8px 30px #527cff55}.top-actions{display:flex;gap:9px}.ghost,.lang{border:1px solid var(--line);background:#111a2a;color:var(--text);padding:9px 14px;border-radius:12px;cursor:pointer}.hero{text-align:center;padding:55px 0 28px}.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid #4665a455;background:#152542;color:#a9c2ff;padding:7px 14px;border-radius:99px;font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:#54dfb0;box-shadow:0 0 12px #54dfb0}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin:20px 0 12px;font-weight:900;letter-spacing:-1px}.grad{background:linear-gradient(90deg,#8ca5ff,#56dce8);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:17px;margin:0 auto;max-width:620px;line-height:1.9}.main-card{max-width:850px;margin:32px auto 0;padding:22px;border:1px solid #344665;background:linear-gradient(145deg,#152238ee,#0f1726f2);border-radius:25px;box-shadow:var(--shadow);position:relative;overflow:hidden}.main-card:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#597dff16;filter:blur(35px);top:-150px;left:-60px;pointer-events:none}.input-label{display:block;text-align:right;color:#c8d4e8;font-size:14px;margin:0 4px 10px}.urlbox{display:flex;gap:10px;background:#080e1a;border:1px solid #2c3d58;border-radius:16px;padding:8px;position:relative}.urlbox:focus-within{border-color:#718fff;box-shadow:0 0 0 3px #718fff20}.urlbox input{min-width:0;flex:1;background:transparent;border:0;outline:0;color:white;padding:8px 12px;direction:ltr;text-align:left;font-size:15px}.urlbox input::placeholder{color:#718096}.primary{border:0;border-radius:12px;padding:12px 23px;color:#07101c;font-weight:900;cursor:pointer;background:linear-gradient(110deg,#91a7ff,#5ce0e8);box-shadow:0 8px 24px #5c8bff33;transition:.2s}.primary:hover{transform:translateY(-2px);filter:brightness(1.06)}.hint{font-size:12px;color:#8292aa;margin:11px 4px 0;text-align:right}.platforms{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:25px auto 0}.platform{border:1px solid var(--line);background:#111a29;border-radius:13px;padding:10px 15px;color:#c8d3e5;font-size:13px;display:flex;align-items:center;gap:8px}.platform b{font-size:16px;color:#fff}.section{padding:64px 0 15px}.section h2{text-align:center;font-size:27px;margin:0 0 9px}.section>p{text-align:center;color:var(--muted);margin:0 0 28px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature{background:linear-gradient(145deg,#121d2e,#0e1624);border:1px solid var(--line);padding:21px;border-radius:18px}.feature .ico{width:42px;height:42px;border-radius:13px;background:#263d68;color:#a9c3ff;display:grid;place-items:center;font-size:20px;margin-bottom:13px}.feature h3{margin:0 0 7px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.8}.result{display:none;text-align:right;margin-top:18px;padding:16px;border-radius:15px;border:1px solid var(--line);background:#0a1220}.result.show{display:block}.result .status{font-weight:700;margin-bottom:8px}.result small{color:var(--muted);line-height:1.8;display:block}.result a{display:inline-block;margin-top:12px;color:#a9c2ff;text-decoration:none}.preview{margin-top:14px;max-height:360px;overflow:hidden;border:1px solid var(--line);border-radius:13px;background:#050914;display:grid;place-items:center}.preview img,.preview video{display:block;max-width:100%;max-height:350px}.result-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:12px}.result-actions a{color:#a9c2ff;text-decoration:none}.result-actions .primary{padding:10px 18px}.notice{max-width:850px;margin:18px auto 0;color:#8fa0b9;font-size:12px;line-height:1.8;text-align:center}.footer{border-top:1px solid #1d293b;margin-top:65px;padding:24px 0;color:#718096;text-align:center;font-size:12px}.light{--bg:#eef2f9;--panel:#fff;--panel2:#e8eef8;--text:#172238;--muted:#64748b;--line:#d4deed;background:radial-gradient(ellipse at 50% -20%,#cbdcff 0,transparent 48%),var(--bg)}.light .main-card{background:linear-gradient(145deg,#fff,#edf3fc);border-color:#d2ddef}.light .urlbox{background:#f7f9fd;border-color:#d4deed}.light .urlbox input{color:#172238}.light .platform,.light .ghost,.light .lang,.light .feature{background:#fff;color:#26354e}.light .platform b{color:#172238}.light .result{background:#f8faff}.light .input-label{color:#34445f}
+@media(max-width:700px){.hero{padding-top:35px}.main-card{padding:15px}.urlbox{flex-direction:column}.urlbox input{padding:13px 10px}.primary{width:100%}.features{grid-template-columns:1fr}.section{padding-top:48px}.top{padding:17px 0}.brand{font-size:19px}}
+</style></head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><span class="logo">↓</span><span>Media<span class="grad">Nova</span></span></div><div class="top-actions"><button class="lang" id="langBtn">EN</button><button class="ghost" id="themeBtn" aria-label="تغيير المظهر">☼</button></div></header>
+<section class="hero"><span class="pill"><i class="dot"></i> منصة وسائط بسيطة وآمنة</span><h1>كل وسائطك، في <span class="grad">مكان واحد</span></h1><p>الصق رابط الصورة أو الفيديو المتاح للتنزيل، وسنساعدك في الوصول إلى الملف بالطريقة المناسبة.</p>
+<div class="main-card"><label class="input-label" for="mediaUrl">رابط المحتوى</label><div class="urlbox"><input id="mediaUrl" type="url" placeholder="https://example.com/video.mp4" autocomplete="url"><button class="primary" id="goBtn">فحص الرابط ←</button></div><div class="hint">يدعم الروابط المباشرة للصور والفيديوهات، وروابط المنصات عند توافر تكامل رسمي ومصرّح به.</div>
+<div class="result" id="result" aria-live="polite"><div class="status" id="resultTitle"></div><small id="resultText"></small><div id="preview" class="preview" hidden></div><div class="result-actions"><button class="primary" id="downloadBtn" hidden>تنزيل الملف ↓</button><a id="openLink" href="#" target="_blank" rel="noopener" hidden>فتح الملف ↗</a></div></div></div>
+<div class="platforms"><span class="platform"><b>▶</b> YouTube</span><span class="platform"><b>♪</b> TikTok</span><span class="platform"><b>◎</b> Instagram</span><span class="platform"><b>f</b> Facebook</span><span class="platform"><b>𝕏</b> X</span><span class="platform"><b>▧</b> Pinterest</span></div>
+<div class="notice">ظهور اسم المنصة لا يعني أن كل روابطها قابلة للتنزيل. التنزيل يعتمد على إتاحة المحتوى، وحقوق صاحبه، وواجهات المنصة الرسمية.</div></section>
+<section class="section"><h2>مصمم علشان يكون <span class="grad">سهل وسريع</span></h2><p>واجهة نظيفة، خطوات واضحة، وتجربة مناسبة للموبايل.</p><div class="features">
+<article class="feature"><div class="ico">↧</div><h3>روابط مباشرة</h3><p>افتح أو نزّل ملفات الصور والفيديو المباشرة التي يسمح خادمها بالوصول إليها.</p></article>
+<article class="feature"><div class="ico">◇</div><h3>خصوصية أفضل</h3><p>لا نطلب كلمة مرور حسابك، ولا نطلب تسجيل الدخول إلى منصات التواصل.</p></article>
+<article class="feature"><div class="ico">◐</div><h3>مظهر مريح</h3><p>وضع ليلي ونهاري، وتصميم متجاوب مع الشاشات الصغيرة والكبيرة.</p></article>
+</div></section>
+<footer class="footer">© <span id="year"></span> MediaNova — جميع الحقوق محفوظة</footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+$('year').textContent=new Date().getFullYear();
+$('themeBtn').addEventListener('click',()=>document.body.classList.toggle('light'));
+let english=false;
+$('langBtn').addEventListener('click',()=>{
+ english=!english; document.documentElement.lang=english?'en':'ar';document.documentElement.dir=english?'ltr':'rtl';
+ $('langBtn').textContent=english?'عربي':'EN';
+ document.querySelector('.hero h1').innerHTML=english?'Your media, <span class="grad">one place</span>':'كل وسائطك، في <span class="grad">مكان واحد</span>';
+ document.querySelector('.hero p').textContent=english?'Paste a direct media URL or a link supported by an authorized integration.':'الصق رابط الصورة أو الفيديو المتاح للتنزيل، وسنساعدك في الوصول إلى الملف بالطريقة المناسبة.';
+ $('goBtn').textContent=english?'Check link →':'فحص الرابط ←';
+ $('mediaUrl').placeholder=english?'https://example.com/video.mp4':'https://example.com/video.mp4';
+});
+function isDirectMedia(url){return /\.(mp4|webm|mov|m4v|jpg|jpeg|png|gif|webp|avif|mp3|m4a|ogg|wav|pdf)(\?.*)?$/i.test(url.pathname+url.search)}
+function safeName(url){
+ const part=decodeURIComponent(url.pathname.split('/').pop()||'media-file').replace(/[\\/:*?"<>|]+/g,'_');
+ return part.length>100?part.slice(-100):part;
+}
+function clearPreview(){const box=$('preview');box.innerHTML='';box.hidden=true;}
+$('goBtn').addEventListener('click',async()=>{
+ const raw=$('mediaUrl').value.trim(), box=$('result'), downloadBtn=$('downloadBtn'), openLink=$('openLink');
+ box.classList.add('show');downloadBtn.hidden=true;openLink.hidden=true;clearPreview();
+ let url;try{url=new URL(raw);if(!['http:','https:'].includes(url.protocol))throw 0;}catch(e){$('resultTitle').textContent='الرابط غير صحيح';$('resultText').textContent='اكتب رابطًا كاملًا يبدأ بـ https:// أو http://';return;}
+ if(!isDirectMedia(url)){
+   $('resultTitle').textContent='الرابط ليس ملفًا مباشرًا معروفًا';
+   $('resultText').textContent='الصق رابط الملف نفسه وينتهي بامتداد مثل MP4 أو JPG أو PNG أو WEBP أو MP3 أو PDF. روابط صفحات المنصات تحتاج تكاملًا منفصلًا ومصرّحًا به.';
+   return;
+ }
+ $('resultTitle').textContent='جاري فحص الملف…';
+ $('resultText').textContent='هنحاول جلب الملف مباشرة. نجاح التنزيل يعتمد على سماح الخادم بالوصول من المتصفح (CORS) وعدم وجود حماية أو تسجيل دخول.';
+ openLink.href=url.href;openLink.hidden=false;openLink.textContent='فتح الرابط الأصلي ↗';
+ try{
+   const response=await fetch(url.href,{mode:'cors'});
+   if(!response.ok) throw new Error('HTTP '+response.status);
+   const blob=await response.blob();
+   if(!blob.size) throw new Error('empty');
+   const objectUrl=URL.createObjectURL(blob);
+   const filename=safeName(url);
+   downloadBtn.hidden=false;
+   downloadBtn.onclick=()=>{
+     const a=document.createElement('a');a.href=objectUrl;a.download=filename;
+     document.body.appendChild(a);a.click();a.remove();
+   };
+   $('resultTitle').textContent='الملف جاهز للتنزيل';
+   $('resultText').textContent=`تم جلب الملف (${(blob.size/1024/1024).toFixed(2)} MB). اضغط تنزيل الملف لحفظه على جهازك.`;
+   if(blob.type.startsWith('image/')){const img=document.createElement('img');img.alt='معاينة الملف';img.src=objectUrl;$('preview').appendChild(img);$('preview').hidden=false;}
+   else if(blob.type.startsWith('video/')){const video=document.createElement('video');video.controls=true;video.src=objectUrl;$('preview').appendChild(video);$('preview').hidden=false;}
+   // Keep object URL alive while the result remains on screen.
+   window.currentMediaObjectUrl=objectUrl;
+ }catch(err){
+   $('resultTitle').textContent='الخادم منع الجلب المباشر';
+   $('resultText').textContent='غالبًا الخادم لا يسمح بطلبات المتصفح من موقع آخر (CORS)، أو يحتاج تسجيل دخول. جرّب فتح الرابط الأصلي؛ وإذا لم يكن رابط ملف مباشر فلن يعمل هنا. لا يوجد تجاوز للحماية أو صلاحيات الوصول.';
+ }
+});
+$('mediaUrl').addEventListener('keydown',e=>{if(e.key==='Enter')$('goBtn').click()});
+</script></body></html>
